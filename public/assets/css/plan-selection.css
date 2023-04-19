@@ -1,0 +1,119 @@
+.plan-recommended {
+    width: 160px;
+    margin: -15px auto 15px;
+    padding-bottom: 2px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.05);
+    background: #00b640;
+    border-radius: 0 0 4px 4px;
+}
+
+.standard-highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 4px solid #1e44d1;
+}
+
+.deluxe-highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 4px solid #00b640;
+}
+
+.premium-highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 4px solid #f16a1b;
+}
+
+.standard {
+    background-color: #1e44d1;
+    border-bottom: 3px solid #243780;
+    color: #fff;
+}
+
+.deluxe {
+    background-color: #00b640;
+    border-bottom: 3px solid #18937b;
+    color: #fff;
+}
+
+.premium {
+    background-color: #f16a1b;
+    border-bottom: 3px solid #b35016;
+    color: #fff;
+}
+
+/* Add your custom styles here */
+
+.subscribe-btn:hover {
+    /* Add hover effect to the button */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-standard {
+    background-color: #1e44d1;
+    color: #fff;
+    border-color: #1e44d1;
+}
+
+.btn-deluxe {
+    background-color: #00b640;
+    color: #fff;
+    border-color: #00b640;
+}
+
+.btn-premium {
+    background-color: #f16a1b;
+    color: #fff;
+    border-color: #f16a1b;
+}
+
+.btn-standard:hover,
+.btn-deluxe:hover,
+.btn-premium:hover {
+    color: white;
+}
+
+@keyframes btnPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-standard:hover,
+.btn-deluxe:hover,
+.btn-premium:hover {
+    animation: btnPulse 1s infinite;
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.subscribe-btn:hover ~ .plan-title {
+    animation: fadeIn 1.5s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
